@@ -16,6 +16,8 @@ void findDuplicate(int arr[], int n)
     }
     cout<<"No duplicate"<<endl;
 }
+
+//Works only for positive elements and in range of 0 to n-1//
 void NegateArr(int arr[],int n)
 {
     for(int i=0;i<n;i++)
