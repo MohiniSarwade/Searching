@@ -16,13 +16,27 @@ void findDuplicate(int arr[], int n)
     }
     cout<<"No duplicate"<<endl;
 }
+void NegateArr(int arr[],int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(arr[abs(arr[i])]<0)
+        {    
+            cout<<"Duplicate found "<<abs(arr[i])<<" at position "<<i<<endl;
+            return;
+        }
+        else
+            arr[abs(arr[i])]*=-1;
+    }
+    cout<<"No duplicate"<<endl;
+}
 
 int main()
 {
     int n=5;
-    int arr[n]={3,2,1,4,7};
+    int arr[n]={3,2,1,4,3};
     findDuplicate(arr,n);
-    
+    NegateArr(arr,n);
     return 0;
     
 }
