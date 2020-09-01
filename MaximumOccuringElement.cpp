@@ -1,3 +1,5 @@
+//Works Only for range of 1-n //
+
 #include<bits/stdc++.h>
 using namespace std;
 void MaxNo(int arr[],int n)
